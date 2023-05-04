@@ -520,6 +520,7 @@ void testingArray()
                     sa->deleteAt(ind);
                     printSequenceArray(*sa);
                 }
+                break;
                 
             case 12:
                 {
@@ -697,6 +698,7 @@ void testingList()
                     sa->deleteAt(ind);
                     printSequenceList(*sa);
                 }
+                break;
             case 13:
                 {
                     int ind;
@@ -706,6 +708,7 @@ void testingList()
                     sa->set(ind, item);
                     printSequenceList(*sa);
                 }
+                break;
         }
     }
     delete sa;

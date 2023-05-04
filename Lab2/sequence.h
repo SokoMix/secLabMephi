@@ -192,8 +192,8 @@ public:
             newData[i] = data[i];
         }
         delete data;
-        data = newData;
         sizeAr = newSize;
+        data = newData;
     }
     
     void insertAt(T item, int index)
@@ -246,7 +246,7 @@ public:
         {
             newData[i + this->sizeAr] = lst.get(i);
         }
-        DynamicArray<T>* nw = new DynamicArray(newData, this->sizeAr + lst.getSize() + 1);
+        DynamicArray<T>* nw = new DynamicArray(newData, this->sizeAr + lst.getSize());
         delete[] newData;
         return nw;
     };
@@ -307,9 +307,9 @@ public:
                 throw IndexOutOfRange(Empty);
             if (index < 0 || index >= sizeAr)
                 throw IndexOutOfRange(Invalid);
-            for (int i = sizeAr; i > index; i--)
+            for (int i = index; i < sizeAr - 1; i++)
             {
-                data[i] = data[i - 1];
+                data[i] = data[i + 1];
             }
             sizeAr--;
             if (sizeAr + SIZECON == capacity)
@@ -330,8 +330,6 @@ public:
     
     DynamicArray<T>* getSubAr(int start, int fin)
     {
-        try
-        {
             if (start < 0 || start >= sizeAr || fin >= sizeAr || fin < 0 || start > fin)
                 throw IndexOutOfRange(Invalid);
             T* ar = new T[fin - start + 1];
@@ -342,10 +340,6 @@ public:
             DynamicArray<T>* retval = new DynamicArray<T>(ar, fin - start + 1);
             delete[] ar;
             return retval;
-        } catch (IndexOutOfRange& e) {
-            e.printError();
-            return NULL;
-        }
     }
 };
 
@@ -682,6 +676,7 @@ public:
                 nw->setPrev(itm->getPrev());
                 nw->setNext(itm);
                 itm->setPrev(nw);
+                sizeList++;
             }
             else
             {
@@ -696,8 +691,8 @@ public:
                 itm->setPrev(nw);
                 nw->setPrev(preit);
                 nw->setNext(itm);
+                sizeList++;
             }
-            sizeList++;
         } catch (IndexOutOfRange& e)
         {
             e.printError();
@@ -710,7 +705,7 @@ public:
         {
             if (sizeList == 0)
                 throw IndexOutOfRange(Empty);
-            if (startIndex < 0 || startIndex >= sizeList || endIndex < 0 || endIndex >= sizeList)
+            if (startIndex < 0 || startIndex >= sizeList || endIndex < 0 || endIndex >= sizeList || startIndex > endIndex)
                 throw IndexOutOfRange(Invalid);
             Item<T>* item = first;
             LinkedList<T>* newList = new LinkedList();
@@ -726,7 +721,7 @@ public:
             return newList;
         } catch (IndexOutOfRange &e) {
             e.printError();
-            return NULL;
+            return new LinkedList<T>();
         }
     };
 };
@@ -912,7 +907,15 @@ public:
     
     SequenceArray<T>* getSubsequence(int startIndex, int endIndex)
     {
-        return new SequenceArray(*data->getSubAr(startIndex, endIndex));
+        SequenceArray<T>* attemp;
+        try
+        {
+            attemp = new SequenceArray(*data->getSubAr(startIndex, endIndex));
+            return attemp;
+        } catch(IndexOutOfRange& e){
+            e.printError();
+            return new SequenceArray<T>();
+        };
     };
     
     SequenceArray<T>* concat(SequenceArray<T>* list)

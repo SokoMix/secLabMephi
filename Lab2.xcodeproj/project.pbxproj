@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E92B4C1529C1F3870019EA96 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E92B4C1429C1F3870019EA96 /* main.cpp */; };
-		E92B4C1D29C1F3C30019EA96 /* sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E92B4C1C29C1F3C30019EA96 /* sequence.cpp */; };
 		E933E68429EFF22500E1AC51 /* unitTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E933E68229EFF22500E1AC51 /* unitTests.cpp */; };
 /* End PBXBuildFile section */
 
@@ -27,12 +25,9 @@
 /* Begin PBXFileReference section */
 		E915A1D029EAE7AE0022D205 /* customException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customException.h; sourceTree = "<group>"; };
 		E92B4C1129C1F3870019EA96 /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92B4C1429C1F3870019EA96 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E92B4C1B29C1F3AC0019EA96 /* sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sequence.h; sourceTree = "<group>"; };
-		E92B4C1C29C1F3C30019EA96 /* sequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sequence.cpp; sourceTree = "<group>"; };
 		E933E68229EFF22500E1AC51 /* unitTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unitTests.cpp; sourceTree = "<group>"; };
 		E933E68329EFF22500E1AC51 /* unitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unitTests.h; sourceTree = "<group>"; };
-		E96A629729ED212E00F01767 /* childSequences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = childSequences.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +60,8 @@
 		E92B4C1329C1F3870019EA96 /* Lab2 */ = {
 			isa = PBXGroup;
 			children = (
-				E92B4C1429C1F3870019EA96 /* main.cpp */,
 				E92B4C1B29C1F3AC0019EA96 /* sequence.h */,
-				E92B4C1C29C1F3C30019EA96 /* sequence.cpp */,
 				E915A1D029EAE7AE0022D205 /* customException.h */,
-				E96A629729ED212E00F01767 /* childSequences.h */,
 				E933E68229EFF22500E1AC51 /* unitTests.cpp */,
 				E933E68329EFF22500E1AC51 /* unitTests.h */,
 			);
@@ -133,8 +125,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92B4C1D29C1F3C30019EA96 /* sequence.cpp in Sources */,
-				E92B4C1529C1F3870019EA96 /* main.cpp in Sources */,
 				E933E68429EFF22500E1AC51 /* unitTests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,4 +3,132 @@
    uuid = "5E3B9A69-A341-4CAF-B6AD-E5910401004B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1A60BF9-2F30-4679-8B7A-30C2ECE08389"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab2/sequence.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "660"
+            endingLineNumber = "660"
+            landmarkName = "insertAt(item, index)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D1A60BF9-2F30-4679-8B7A-30C2ECE08389 - f58c7287f2b2f4b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LinkedList&lt;int&gt;::insertAt(int, int)"
+                  moduleName = "Lab2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sokomix/Documents/projects/Lab2/Lab2/sequence.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "666"
+                  endingLineNumber = "666"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D1A60BF9-2F30-4679-8B7A-30C2ECE08389 - 52c7d35f78e65960"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LinkedList&lt;char&gt;::insertAt(char, int)"
+                  moduleName = "Lab2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sokomix/Documents/projects/Lab2/Lab2/sequence.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "666"
+                  endingLineNumber = "666"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D1A60BF9-2F30-4679-8B7A-30C2ECE08389 - b0736551e565f1f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LinkedList&lt;float&gt;::insertAt(float, int)"
+                  moduleName = "Lab2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sokomix/Documents/projects/Lab2/Lab2/sequence.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "666"
+                  endingLineNumber = "666"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D36B8853-2962-4271-96C1-D422E0E253EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab2/sequence.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "getSubAr(start, fin)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D36B8853-2962-4271-96C1-D422E0E253EB - 74eed1a6e2722de6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DynamicArray&lt;char&gt;::getSubAr(int, int)"
+                  moduleName = "Lab2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sokomix/Documents/projects/Lab2/Lab2/sequence.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D36B8853-2962-4271-96C1-D422E0E253EB - b4d3f1fff6130512"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DynamicArray&lt;int&gt;::getSubAr(int, int)"
+                  moduleName = "Lab2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sokomix/Documents/projects/Lab2/Lab2/sequence.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "D36B8853-2962-4271-96C1-D422E0E253EB - 5250eba0fd41d91f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DynamicArray&lt;float&gt;::getSubAr(int, int)"
+                  moduleName = "Lab2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sokomix/Documents/projects/Lab2/Lab2/sequence.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "334"
+                  endingLineNumber = "334"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
